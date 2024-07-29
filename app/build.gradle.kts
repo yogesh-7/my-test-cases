@@ -70,11 +70,11 @@ dependencies {
 
 
 
-    implementation 'org.mockito:mockito-core:5.3.1'
+    //implementation 'org.mockito:mockito-core:5.3.1'
     testImplementation (libs.mockwebserver)
     testImplementation(libs.mockito.kotlin)
     testImplementation (libs.androidx.core.testing)
-    //testImplementation(libs.mockito.core)
+    testImplementation(libs.mockito.core)
     testImplementation(libs.mockito.inline)
     testImplementation(libs.mockito.android)
 
