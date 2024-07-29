@@ -47,6 +47,7 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+
 }
 
 dependencies {
@@ -66,4 +67,15 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+
+
+    implementation 'org.mockito:mockito-core:5.3.1'
+    testImplementation (libs.mockwebserver)
+    testImplementation(libs.mockito.kotlin)
+    testImplementation (libs.androidx.core.testing)
+    //testImplementation(libs.mockito.core)
+    testImplementation(libs.mockito.inline)
+    testImplementation(libs.mockito.android)
+
 }
